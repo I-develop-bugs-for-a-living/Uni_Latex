@@ -1,0 +1,46 @@
+\documentclass{article}
+
+\title{Linera Algebra 1}
+\date{2022-18-10}
+\author{Jan Buehne, Marcelo Pedernera}
+\usepackage{gensymb}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\newlist{todolist}{itemize}{2}
+\setlist[todolist]{label=[\hspace{0.2cm}]}
+
+\newcommand{\theSpace}{3}
+
+\begin{document}
+
+    \maketitle
+    \pagenumbering{gobble}
+    \newpage
+    \pagenumbering{arabic}
+
+    \tableofcontents
+
+    \section{Aussagenlogik und Mengenlehre}
+    
+    \subsection{Aussagenlogik}
+    Eine Aussage nimmt einen eindeutigen Wahrheitswert an, entweder wahr (w) oder falsch (f). \\
+
+    \begin{tabular}{ |c|c|c|c|c|c|c| }
+        \hline
+        A & B & $\lnot$A & A $\land$ B & A $\lor$ B & A $\Rightarrow$ B & A $\Leftrightarrow$ B \\
+        \hline
+        w & w & f & w & w & w & w \\
+        w & f & f & f & w & f & f \\
+        f & w & w & f & w & w & f \\
+        f & f & w & f & f & w & w \\
+        \hline
+
+
+    \end{tabular} \\
+
+    Ein Prädikat ist eine Aussage \( A = A(x) \), deren Wahrheitswert von einer Variablen $x$ abhängt.
+    Dann sind $\forall x : A(x) (für alle x gilt A(x)) und \in x : A(x)$ (es existiert ein x, sodass A(x) gilt) Aussagen.
+
+\end{document}
